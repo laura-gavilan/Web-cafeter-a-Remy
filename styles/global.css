@@ -7,7 +7,7 @@ html {
 }
 
 html, body {
-    font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Poppins, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -27,26 +27,67 @@ a {
 	text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
+
 /* Referencias de estilos genéricas (sustituir por los colores deseados) */
 :root {
-    --bg-color: #FABADA;
-    --accent-bg-color: #f4ede4;
+    --container-width: 90%;
+    --bg-color:  #f4e7cf;
+
+
+    /* --accent-bg-color: #f4ede4;
     --text-color: #1d1d1d;
     --text-light-color: #696969;
     --text-secondary-color: #a31212;
     --primary-color: #0d4011;
-    --primary-color-dark: #154b21;
+    --primary-color-dark: #154b21; */
 }
 
 /* CSS Global para estilos */
 
-ul {
-    list-style-type: none;
-}
 
 /* A partir de aquí introduce tus estilos
 (estos estilos aplican desde Mobile en adelante hasta  que se sobreescriban en alguna media query) */
 
 body {
     background-color: var(--bg-color);
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+.logo-web {
+    font-size: 26px;
+}
+
+
+
+/* NAV */
+
+.desktop-nav {
+    display: none;
+}
+
+.mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.mobile-nav img {
+    width: 40px;
+}
+
+.front-page-header {
+    padding: 30px 0px;
+}
+
+
+.header img {
+    border-radius: 14px;
 }
