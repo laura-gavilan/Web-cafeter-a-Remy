@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -6,14 +8,26 @@ html {
     scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
     font-family: Poppins, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, ul, ol, li,
-figure, figcaption,
-blockquote, dl, dd {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
     margin: 0;
     padding: 0;
 }
@@ -23,8 +37,8 @@ ul {
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 img {
@@ -34,7 +48,8 @@ img {
 /* Referencias de estilos genéricas (sustituir por los colores deseados) */
 :root {
     --container-width: 90%;
-    --bg-color:  #f4e7cf;
+    --bg-color: #f4e7cf;
+    --header-color: #21b1a9;
 
 
     /* --accent-bg-color: #f4ede4;
@@ -79,6 +94,10 @@ body {
     padding: 16px;
 }
 
+.mobile-nav-menu {
+    cursor: pointer;
+}
+
 .mobile-nav img {
     width: 40px;
 }
@@ -87,7 +106,49 @@ body {
     padding: 30px 0px;
 }
 
-
+/* HEADER */
 .header img {
+    border-radius: 14px;
+}
+
+/* MAIN */
+.hero {
+    background-color: var(--header-color);
+}
+
+.text-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 12px 0;
+    gap: 18px;
+}
+
+.text-hero h2 {
+    font-size: 30px;
+    border-bottom: 1px solid;
+}
+
+.text-hero p {
+    padding: 8px 30px;
+}
+
+.galery-main-container {
+    padding: 44px 0;
+}
+
+.title-galery {
+    text-transform: uppercase;
+
+}
+.galery-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.galery-main img {
     border-radius: 14px;
 }

@@ -47,11 +47,25 @@
 		font-size: 22px;
 	}
 
+	/* MAIN  */
+	.galery-main {
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.galery-main img {
+		width: 420px;
+	}
 }
 
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
 	:root {
 	
+	}
+
+	.galery-main img {
+		width: 600px;
 	}
 }
