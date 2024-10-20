@@ -49,22 +49,11 @@ img {
 :root {
     --container-width: 90%;
     --bg-color: #f4e7cf;
-    --header-color: #21b1a9;
+    --section-color:#d04b41;
+    --text-color:	#FFFFFF;
+    --title-color:  #460c07;
 
-
-    /* --accent-bg-color: #f4ede4;
-    --text-color: #1d1d1d;
-    --text-light-color: #696969;
-    --text-secondary-color: #a31212;
-    --primary-color: #0d4011;
-    --primary-color-dark: #154b21; */
 }
-
-/* CSS Global para estilos */
-
-
-/* A partir de aquí introduce tus estilos
-(estos estilos aplican desde Mobile en adelante hasta  que se sobreescriban en alguna media query) */
 
 body {
     background-color: var(--bg-color);
@@ -79,12 +68,15 @@ body {
     font-size: 26px;
 }
 
-
-
 /* NAV */
 
 .desktop-nav {
     display: none;
+}
+
+.logo-web p {
+    color: black;
+    font-weight: 800;
 }
 
 .mobile-nav {
@@ -113,7 +105,7 @@ body {
 
 /* MAIN */
 .hero {
-    background-color: var(--header-color);
+    background-color: var(--section-color);
 }
 
 .text-hero {
@@ -126,12 +118,15 @@ body {
 }
 
 .text-hero h2 {
-    font-size: 30px;
-    border-bottom: 1px solid;
+    font-size: 24px;
+    color: var(--title-color);
+    text-decoration: underline;
+    line-height: 2;
 }
 
 .text-hero p {
     padding: 8px 30px;
+    color: var(--text-color);
 }
 
 .galery-main-container {
@@ -151,4 +146,63 @@ body {
 
 .galery-main img {
     border-radius: 14px;
+}
+
+/* FOOTER  */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section-color);
+    padding: 30px 0;
+    font-size: large;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer-container li, span, p, small {
+    color: var(--text-color);
+}
+
+.footer-container h2 {
+    color:var(--title-color);
+}
+
+.information-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 44px;
+}
+
+.hour-footer {
+    padding: 10px 0;
+}
+
+.hour-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 8px;
+}
+
+.location-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.redes-footer img {
+    width: 22px;
 }

@@ -1,8 +1,7 @@
 /* Media query para dispositivos TABLET (mayores a 480px) */
 @media (min-width: 481px) {
-	:root {
-	}
-	
+	:root {}
+
 
 	.container {
 		width: var(75%);
@@ -12,13 +11,14 @@
 		border-radius: 14px;
 	}
 
+	.hour-footer ul {
+		flex-direction: column;
+	}
 }
 
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */
 @media (min-width: 1024px) {
-	:root {
-		
-	}
+	:root {}
 
 	.logo-web {
 		font-size: 46px;
@@ -31,6 +31,7 @@
 	.desktop-nav {
 		display: flex;
 		justify-content: center;
+		cursor: pointer;
 	}
 
 	.desktop-navbar {
@@ -45,9 +46,15 @@
 		gap: 40px;
 		align-items: center;
 		font-size: 22px;
+		font-weight: bold;
 	}
 
 	/* MAIN  */
+	.text-hero h2 {
+		font-size: 28px;
+		line-height: 2;
+	}
+
 	.galery-main {
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -57,13 +64,23 @@
 	.galery-main img {
 		width: 420px;
 	}
+
+	/* FOOTER   */
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.information-footer {
+		flex-direction: row;
+	}
+
 }
+
 
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
-	:root {
-	
-	}
+	:root {}
 
 	.galery-main img {
 		width: 600px;
