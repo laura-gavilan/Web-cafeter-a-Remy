@@ -1,0 +1,86 @@
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+.menu-section h2 {
+    text-align: center;
+}
+
+
+.coffee-menu-section,
+.tea-and-infusions-menu-section,
+.cold-drinks-menu-section,
+.beer-menu-section,
+.sweet-food-menu-section,
+.salty-food-menu-section,
+.first-distillates-list,
+.second-distillates-list,
+.third-distillates-list,
+.quarter-distillates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.menu-section ul {
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-section li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.menu-section span {
+    color: black;
+}
+
+.menu-section h2 {
+    font-size: 40px;
+}
+
+.menu-section h3 {
+    font-size: 30px;
+}
+
+
+
+
+/* Media query para dispositivos TABLET (mayores a 480px) */
+@media (min-width: 481px) {
+    :root {
+        --container-width: 75%;
+    }
+
+}
+
+/* Media query para dispositivos DESKTOP (mayores a 1024px) */
+@media (min-width: 1024px) {
+    :root {
+        --container-width: 85%;
+    }
+
+    .menu-section {
+        flex-direction: row;
+    }
+
+    .drinks-menu-container,
+    .food-menu-section-container,
+    .distillates-menu-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+
+/* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
+@media (min-width: 1440px) {}

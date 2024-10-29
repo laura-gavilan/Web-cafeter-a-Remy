@@ -1,53 +1,69 @@
 /* Media query para dispositivos TABLET (mayores a 480px) */
 @media (min-width: 481px) {
-	:root {}
-
-
-	.container {
-		width: var(75%);
+	:root {
+		--container-width: 75%;
+		--bg-color: #f4e7cf;
+		--section-color: #d04b41;
+		--text-color: #FFFFFF;
+		--title-color: #460c07;
+		--bg-nav: #8f1212;
 	}
 
-	.header img {
-		border-radius: 14px;
-	}
 
-	.hour-footer ul {
-		flex-direction: column;
-	}
+.logo-web {
+	padding-left: 38px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.header img {
+	border-radius: 14px;
+}
+
+.text-hero {
+	font-size: 22px;
+	padding: 44px;
+}
+
+.hour-footer ul {
+	flex-direction: column;
+}
 }
 
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */
 @media (min-width: 1024px) {
-	:root {}
 
-	.logo-web {
-		font-size: 46px;
+	:root {
+		--container-width:85%
 	}
 
-	.mobile-nav {
+
+	.mobile-tablet-nav {
 		display: none;
 	}
 
 	.desktop-nav {
 		display: flex;
-		justify-content: center;
-		cursor: pointer;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 20px;
 	}
 
-	.desktop-navbar {
-		display: flex;
-		align-items: center;
-		gap: 54px;
-		padding: 34px 0;
-	}
-
-	.desktop-navbar ul {
-		display: flex;
-		gap: 40px;
-		align-items: center;
-		font-size: 22px;
+	.logo-web p {
+		color: #460c07;
 		font-weight: bold;
 	}
+
+	.desktop-nav ul {
+		display: flex;
+		gap: 50px;
+		font-weight: bold;
+	}
+
+	.desktop-nav li {
+		color: var(--title-color);
+	}
+
 
 	/* MAIN  */
 	.text-hero h2 {
@@ -55,15 +71,22 @@
 		line-height: 2;
 	}
 
-	.galery-main {
-		flex-wrap: wrap;
-		flex-direction: row;
+	.gallery-main-container h2 {
+		padding-left: 52px;
+	}
+
+	.gallery-main {
+		display: flex;
 		justify-content: center;
 	}
 
-	.galery-main img {
-		width: 420px;
+	.gallery-main-images-container {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		max-width: 984px;
 	}
+
 
 	/* FOOTER   */
 	.footer-container {
@@ -80,9 +103,9 @@
 
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
-	:root {}
 
-	.galery-main img {
-		width: 600px;
+	.gallery-main-images-container {
+		min-width: 1300px;
 	}
+
 }

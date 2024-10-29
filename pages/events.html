@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/pages/events.css">
     <title>CAFETERÍA REMY</title>
 </head>
 
 <body>
+
     <nav class="mobile-tablet-nav">
         <div class="logo-web">
             <p><a href="/index.html"> CAFETERÍA REMY</a></p>
@@ -18,9 +20,9 @@
         <div class="mobile-nav-menu">
             <img src="/media/icons/menu-hamburguesa-blanco.png" alt="menú hamburguesa">
         </div>
-</nav>
+    </nav>
 
-<nav class="desktop-nav ">
+    <nav class="desktop-nav ">
         <div class="logo-web">
             <p><a href="/index.html"> CAFETERÍA REMY</a></p>
         </div>
@@ -31,45 +33,66 @@
             <li><a href="/pages/events.html">EVENTOS</a></li>
             <li><a href="/pages/contact.html">CONTACTO</a></li>
         </ul>
-</nav>
+    </nav>
 
-<header>
-    <div>
-        <img src="/media/images/barra-lateral-cafeteria.jpg" alt="barra de la cafetería">
-    </div>
-</header>
-
+    <header class="header">
+        <p>¿Quieres celebrar un evento con nosotros? En cafetería Remy organizamos todo tipo de eventos personalizados</p>
+    </header>
 
     <main>
-        <section class="hero">
-            <div class="text-hero">
-                <h2>Un legado familiar</h2>
-                <p>Ubicada en la sierra de los filabres, cafetería REMY nace en el año 1975, comenzó siendo bar y unos
-                    años más tarde se transformó en cafetería, siendo la priemra cafetería de Macael. Un legado familiar
-                    que empezó con Amador y continúo con su hijo, Antonio, quién actualmente está al cargo de la
-                    cafetería, junto con su mujer, quien le ha acompañado siempre, siendo socia también.</p>
-            </div>
-        </section>
+        <section class="events-section container">
+            <h2>EVENTOS</h2>
+            <div class="events-cards">
+                <div class="corporate-events-card card-brown">
+                    <h3>Coorporativos</h3>
+                    <div class="events-img container">
+                        <img src="/media/images/zona-entrada.jpg" alt="zona de sofás de la cafetería">
+                    </div>
 
+                    <div class="text-card">
+                        <p>Nuestros espacios son ideales para grupos de hasta 60 personas, con varias pantallas de TV </p>
+                    </div>
+                </div>
 
-        <!-- SECCIÓN GALERÍA -->
-        <section class="gallery-main-container container">
-            <h2>Galería</h2>
+                <div class="showroom-events-card">
+                    <h3>Showroom</h3>
+                    <div class="events-img container">
+                        <img src="/media/images/showroom.jpg" alt="Habitación con ropa en venta en estanterías">
+                    </div>
 
-            <div class="gallery-main">
-                <div class="gallery-main-images-container">
-                    <img src="/media/images/barra-cafeteria.jpg" alt="barra de la cafetería">
-                    <img src="/media/images/barra-lateral-cafeteria.jpg" alt="barra lateral de la cafetería">
-                    <img src="/media/images/zona-entrada.jpg"
-                        alt="zona de la entrada de la cafetería con sillones verdes y mesas">
-                    <img src="/media/images/zona-fondo.jpg"
-                        alt="zona del fondo de la cafetería con sillones verdes y televisión arriba">
+                    <div class="text-card">
+                        <p>La cafetería te ofrece la oportunidad de resaltar tu tienda con tus mejores productos.</p>
+                    </div>
+                </div>
+
+                <div class="private-events-card">
+                    <h3>Privados</h3>
+                    <div class="events-img container">
+                        <img src="/media/images/evento-privado.jpg" alt="Mnaos de diferentes personas brindando">
+                    </div>
+
+                    <div class="text-card">
+                        <p>Disfruta con tu familia y amigos en un espacio privado. </p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section class="form-section">
+            <h3>Contáctanos</h3>
+            <form class="form-section-container container">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
-    <!-- FOOTER -->
+
     <footer>
         <section class="footer-container">
             <div class="footer container">
@@ -108,7 +131,4 @@
         </section>
     </footer>
 
-
 </body>
-
-</html>
