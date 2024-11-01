@@ -1,6 +1,4 @@
-:root {
-	--bg-header: burlywood;
-}
+:root {}
 
 img {
 	border-radius: 8px;
@@ -8,21 +6,22 @@ img {
 
 :root {
 	--bg-first-section: #8f1212;
-	--bg-form-section: #e79821;
 	--text-color: #FFFFFF;
 	--title-color: #460c07;
+	--card-color: #4fc4b9;
+	--bg-header-form: #f4e7cf;
 }
 
 
 .header {
 	padding: 50px 0;
-    background-color: var(--bg-header);
-    text-align: center;
+	background-color: var(--bg-header-form);
+	text-align: center;
 }
 
 .header p {
 	color: var(--title-color);
-	font-size: 27px;
+	font-size: 34px;
 	padding: 0 20px;
 }
 
@@ -47,6 +46,7 @@ img {
 	text-transform: uppercase;
 }
 
+
 /* .card-brown {
 	border-top: 20px solid brown;
 } */
@@ -58,27 +58,36 @@ img {
 	border-radius: 10px;
 }
 
+.events-img {
+	flex: 2;
+}
+
 .text-card {
 	padding: 8px 16px;
 	text-align: justify;
+	flex: 1;
 }
 
 .form-section {
-	background-color: var(--bg-form-section);
+	background-color: var(--bg-header-form);
 }
 
 .form-section h3 {
 	color: var(--title-color);
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 20px;
 	text-transform: uppercase;
 }
 
 .form-section-container {
 	display: flex;
 	flex-direction: column;
-	padding: 14px 0 28px;
+	padding: 20px;
 	gap: 8px;
+}
+
+.form-section label {
+	padding: 10px;
 }
 
 .form-section input {
@@ -86,8 +95,20 @@ img {
 	padding: 6px 0;
 }
 
+.button {
+	display: flex;
+	justify-content: center;
+}
+
 .form-section button {
+	background-color: #9d0707;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 	margin-top: 10px;
+	font-size: 18px;
 }
 
 .form-section textarea {
@@ -97,19 +118,50 @@ img {
 
 
 
-
-
-
 /* Media query para dispositivos TABLET (mayores a 480px) */
 @media (min-width: 481px) {
 	:root {
-		--container-width: 80%;
+		--container-width: 90%;
 	}
 
 }
 
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+
+	.events-cards {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.top-cards {
+		display: flex;
+		gap: 40px;
+	}
+
+	.img-and-text-corporate-card,
+	.img-and-text-showroom-card,
+	.img-and-text-events-card {
+		display: flex;
+		padding: 30px;
+		background-color: var(--bg-header-form);
+		align-items: center;
+	}
+
+	.events-img {
+		flex: 1;
+	}
+
+	.text-card p {
+		color: #8f1212;
+		font-size: 26px;
+	}
+
+	.form-section {
+		margin-top: 46px;
+	}
+
+}
 
 
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */

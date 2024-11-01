@@ -48,11 +48,12 @@ img {
 /* Referencias de estilos genéricas (sustituir por los colores deseados) */
 :root {
     --container-width: 90%;
-    --bg-color: #f4e7cf;
+    --bg-color: #FFFFFF;
     --section-color: #d04b41;
     --text-color: #FFFFFF;
     --title-color: #460c07;
     --bg-nav: #8f1212;
+    --bg-header-form: #f4e7cf;
 }
 
 body {
@@ -132,6 +133,12 @@ body {
 
 .gallery-main img {
     border-radius: 14px;
+}
+
+.menu-section {
+    background-image:url(/media/images/fondo_carta_desayuno.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 

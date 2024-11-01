@@ -1,4 +1,39 @@
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+	padding: 30px 0;
+}
 
+.contact-section p {
+	color: black;
+}
+
+.contact-section img {
+	width: 12px;
+}
+
+.contact-information {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.mapa-contact,
+.email-contact,
+.phone-contact {
+	display: flex;
+	gap: 10px;
+}
+
+
+.text-contact-section p {
+	color: black;
+}
+
+.mapa img {
+	width: 100%;
+}
 
 
 /* Media query para dispositivos TABLET (mayores a 480px) */
@@ -12,17 +47,15 @@
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */
 @media (min-width: 1024px) {
 
-	
+	.contact-section {
+		flex-direction: row;
+	}
 
-	
-
-	
+	.contact-information {
+		justify-content: center;
+	}
 }
 
 
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
-@media (min-width: 1440px) {
-
-
-	}
-	
+@media (min-width: 1440px) {}

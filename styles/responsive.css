@@ -2,11 +2,6 @@
 @media (min-width: 481px) {
 	:root {
 		--container-width: 75%;
-		--bg-color: #f4e7cf;
-		--section-color: #d04b41;
-		--text-color: #FFFFFF;
-		--title-color: #460c07;
-		--bg-nav: #8f1212;
 	}
 
 
@@ -28,13 +23,17 @@
 .hour-footer ul {
 	flex-direction: column;
 }
+
 }
+
 
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */
 @media (min-width: 1024px) {
 
 	:root {
-		--container-width:85%
+		--container-width:85%;
+		--text-color: #FFFFFF;
+		
 	}
 
 
@@ -47,21 +46,24 @@
 		justify-content: space-evenly;
 		align-items: center;
 		padding: 20px;
+		background-color: var(--bg-nav);
 	}
 
 	.logo-web p {
-		color: #460c07;
+		color: var(--text-color);
 		font-weight: bold;
+		font-size: 36px;
 	}
 
 	.desktop-nav ul {
 		display: flex;
 		gap: 50px;
 		font-weight: bold;
+		font-size: 22px;
 	}
 
 	.desktop-nav li {
-		color: var(--title-color);
+		color: var(--text-color);
 	}
 
 
