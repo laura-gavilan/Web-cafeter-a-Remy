@@ -1,3 +1,13 @@
+:root {
+	--bg-section:#f3d57ce0;
+	--title-color: #460c07;
+}
+
+.contact-section-container {
+	background-color: var(--bg-section);
+}
+
+
 .contact-section {
 	display: flex;
 	flex-direction: column;
@@ -5,8 +15,12 @@
 	padding: 30px 0;
 }
 
+.contact-information h3 {
+	color: var(--title-color);
+}
+
 .contact-section p {
-	color: black;
+	color: var(--title-color);
 }
 
 .contact-section img {

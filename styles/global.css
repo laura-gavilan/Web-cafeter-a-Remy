@@ -52,8 +52,11 @@ img {
     --section-color: #d04b41;
     --text-color: #FFFFFF;
     --title-color: #460c07;
-    --bg-nav: #8f1212;
-    --bg-header-form: #f4e7cf;
+    --bg-nav: #2b99a8;
+    --bg-header-form: #d4b75e;
+    --bg-hero: #ebbd92;
+    --bg-button-color: #8bc8a9;
+    --button-color: #412f31;
 }
 
 body {
@@ -76,24 +79,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 10px;
     padding-top: 6px;
     background-color: var(--bg-nav);
 }
 
 .logo-web {
     font-size: 24px;
-    color: var(--title-color);
 }
+
+.mobile.nav-menu {
+    cursor: pointer;
+}
+
 
 .mobile-nav-menu img {
     width: 50px;
 }
 
-
-/* .front-page-header {
-    padding: 30px 0px;
-} */
 
 /* HEADER */
 .header img {
@@ -102,6 +105,9 @@ body {
 
 /* MAIN */
 
+.hero {
+    background-color: var(--bg-hero);
+}
 
 .text-hero {
     display: flex;
@@ -112,16 +118,20 @@ body {
     gap: 18px;
 }
 
-.text-hero .gallery-main-container, h2 {
+.text-hero .gallery-main-container,
+h2 {
     font-size: 28px;
     color: var(--title-color);
     text-transform: uppercase;
 }
 
 .text-hero p {
-    padding: 8px 30px;
     color: #701b14;
     line-height: 2;
+}
+
+.gallery-main-container {
+    padding: 20px 0;
 }
 
 .gallery-main-images-container {
@@ -135,10 +145,59 @@ body {
     border-radius: 14px;
 }
 
-.menu-section {
-    background-image:url(/media/images/fondo_carta_desayuno.jpg);
+
+.menu-section-container,
+.events-section-container,
+.contact-section-container {
+    padding: 54px 0;
+}
+
+.menu-section-container {
+    background-image: url(/media/images/taza-pan-cafe.avif);
     background-repeat: no-repeat;
-    overflow: hidden;
+}
+
+.menu-section,
+.events-section {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 20px 0;
+}
+
+.events-section-container {
+    padding: 26px 0;
+}
+
+.contact-section-container {
+    background-color: var(--bg-header-form);
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.contact-section p {
+    color: var(--text-color);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 12px 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: var(--bg-button-color);
+    color: var(--button-color);
+    font-weight: bold;
 }
 
 
@@ -155,7 +214,7 @@ body {
 .footer {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 80px;
 }
 
 .footer-container li,

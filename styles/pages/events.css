@@ -1,5 +1,3 @@
-:root {}
-
 img {
 	border-radius: 8px;
 }
@@ -10,6 +8,10 @@ img {
 	--title-color: #460c07;
 	--card-color: #4fc4b9;
 	--bg-header-form: #f4e7cf;
+	--text-header:#8a2148;
+	--bg-color-sections: #e25880;
+	--bg-button-color: #8bc8a9;
+	--button-color: #412f31;
 }
 
 
@@ -20,8 +22,8 @@ img {
 }
 
 .header p {
-	color: var(--title-color);
-	font-size: 34px;
+	color:var(--text-header);
+	font-size: 28px;
 	padding: 0 20px;
 }
 
@@ -44,17 +46,18 @@ img {
 	color: var(--text-color);
 	padding: 8px 0 8px 16px;
 	text-transform: uppercase;
+	border-bottom: 1px solid;
 }
 
-
-/* .card-brown {
-	border-top: 20px solid brown;
-} */
 
 .corporate-events-card,
 .showroom-events-card,
 .private-events-card {
-	background-color: #8f1212;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+	padding: 10px 0;
+	background-color: var(--bg-color-sections);
 	border-radius: 10px;
 }
 
@@ -64,9 +67,9 @@ img {
 
 .text-card {
 	padding: 8px 16px;
-	text-align: justify;
 	flex: 1;
 }
+
 
 .form-section {
 	background-color: var(--bg-header-form);
@@ -74,6 +77,7 @@ img {
 
 .form-section h3 {
 	color: var(--title-color);
+	font-size: 22px;
 	text-align: center;
 	padding-top: 20px;
 	text-transform: uppercase;
@@ -82,7 +86,7 @@ img {
 .form-section-container {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding: 0 80px;
 	gap: 8px;
 }
 
@@ -101,8 +105,8 @@ img {
 }
 
 .form-section button {
-	background-color: #9d0707;
-	color: white;
+	background-color: var(--bg-button-color);
+	color: var(--button-color);
 	padding: 10px 15px;
 	border: none;
 	border-radius: 4px;
@@ -124,6 +128,10 @@ img {
 		--container-width: 90%;
 	}
 
+	.text-card p {
+		font-size: 18px;
+	}
+
 }
 
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */
@@ -131,7 +139,8 @@ img {
 
 	.events-cards {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
+		flex-direction: row;
 	}
 
 	.top-cards {
@@ -146,19 +155,32 @@ img {
 		padding: 30px;
 		background-color: var(--bg-header-form);
 		align-items: center;
+		flex: 1;
 	}
+
+.corporate-events-card,
+.showroom-events-card,
+.private-events-card {
+	flex:1;
+}
 
 	.events-img {
 		flex: 1;
+		min-width: 240px;
+	}
+
+	.text-card {
+		flex: 2;
 	}
 
 	.text-card p {
 		color: #8f1212;
-		font-size: 26px;
+		font-size: 20px;
 	}
 
 	.form-section {
 		margin-top: 46px;
+		padding: 20px 0 32px;
 	}
 
 }
