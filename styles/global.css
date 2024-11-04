@@ -149,7 +149,7 @@ h2 {
 .menu-section-container,
 .events-section-container,
 .contact-section-container {
-    padding: 54px 0;
+    padding: 30px 0;
 }
 
 .menu-section-container {
@@ -176,7 +176,7 @@ h2 {
 .contact-section {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 34px;
     padding: 20px 0;
 }
 
