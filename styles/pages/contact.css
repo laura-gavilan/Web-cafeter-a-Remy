@@ -5,6 +5,7 @@
 
 .contact-section-container {
 	background-color: var(--bg-section);
+	flex: 1;
 }
 
 
@@ -45,11 +46,17 @@
 	color: black;
 }
 
-.mapa img {
-	width: 100%;
+.mapa {
+	flex: 1;
+    min-height: 280px;
 }
 
-
+.mapa iframe {
+	border: 0;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
 /* Media query para dispositivos TABLET (mayores a 480px) */
 @media (min-width: 481px) {
 	:root {

@@ -8,7 +8,7 @@ img {
 	--title-color: #460c07;
 	--card-color: #4fc4b9;
 	--bg-header-form: #f4e7cf;
-	--text-header:#8a2148;
+	--text-header: #8a2148;
 	--bg-color-sections: #e25880;
 	--bg-button-color: #8bc8a9;
 	--button-color: #412f31;
@@ -22,14 +22,13 @@ img {
 }
 
 .header p {
-	color:var(--text-header);
+	color: var(--text-header);
 	font-size: 28px;
 	padding: 0 20px;
 }
 
 .events-section {
 	padding-bottom: 30px;
-	background-color: var(--bg);
 }
 
 .events-section h2 {
@@ -53,9 +52,9 @@ img {
 .corporate-events-card,
 .showroom-events-card,
 .private-events-card {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 	padding: 10px 0;
 	background-color: var(--bg-color-sections);
 	border-radius: 10px;
@@ -162,11 +161,11 @@ img {
 		flex: 1;
 	}
 
-.corporate-events-card,
-.showroom-events-card,
-.private-events-card {
-	flex:1;
-}
+	.corporate-events-card,
+	.showroom-events-card,
+	.private-events-card {
+		flex: 1;
+	}
 
 	.events-img {
 		flex: 1;
