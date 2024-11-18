@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="/styles/index.css">
     <title>CAFETERÍA REMY</title>
+    <link rel="shortcut icon" href="media/images/favicon.jpg" type="image/x-icon">
 </head>
 
 <body>
+    <div id="top"></div>
     <input type="checkbox" name="abrir-menu-desplegable" id="abrir-menu-desplegable" class="input-menu-desplegable">
-    <nav class="mobile-tablet-nav">
+    <nav class="mobile-tablet-nav" id="nav">
         <div class="logo-web">
             <p><a href="/index.html"> CAFETERÍA REMY</a></p>
         </div>
@@ -45,9 +47,19 @@
     </nav>
 
     <header>
-        <div>
+        <picture>
+            <source srcset="/media/images/barra-cafeteria-480w.webp" media="(max-width: 480px)">
+            <source srcset="/media/images/barra-cafeteria-800w.webp" media="(max-width: 800px)">
+            <source srcset="/media/images/barra-cafeteria-1200w.webp" media="(max-width: 1200px)">
+            <source srcset="/media/images/barra-cafeteria-1800w.webp" media="(max-width: 1800px)">
+
+            <source srcset="/media/images/barra-cafeteria-480w.jpg" media="(max-width: 480px)">
+            <source srcset="/media/images/barra-cafeteria-800w.jpg" media="(max-width: 800px)">
+            <source srcset="/media/images/barra-cafeteria-1200w.jpg" media="(max-width: 1200px)">
+            <source srcset="/media/images/barra-cafeteria-1800w.jpg" media="(max-width: 1800px)">
+
             <img src="/media/images/barra-cafeteria.jpg" alt="barra de la cafetería">
-        </div>
+        </picture>
     </header>
 
 
@@ -60,23 +72,81 @@
                     que empezó con Amador y continúo con su hijo, Antonio, quién actualmente está al cargo de la
                     cafetería, junto con su mujer, María, quien le ha acompañado siempre, siendo socia también.</p>
             </div>
+            <div class="hero-img">
+                <img src="/media/images/entrada.jpg" alt="imagen entrada de la cafetería">
+            </div>
         </section>
 
 
         <!-- SECCIÓN GALERÍA -->
-        <section class="gallery-main-container container">
+        <section class="gallery-main-container container" id="gallery">
             <h2>Galería</h2>
 
-            <div class="gallery-main">
-                <div class="gallery-main-images-container">
-                    <img src="/media/images/cafeteria.jpg" alt="barra de la cafetería">
-                    <img src="/media/images/barra-lateral-cafeteria.jpg" alt="barra lateral de la cafetería">
-                    <img src="/media/images/zona-entrada.jpg"
-                        alt="zona de la entrada de la cafetería con sillones verdes y mesas">
-                    <img src="/media/images/zona-fondo.jpg"
-                        alt="zona del fondo de la cafetería con sillones verdes y televisión arriba">
-                </div>
-            </div>
+            <picture class="gallery-main">
+                <source srcset="/media/images/cafeteria-480w.avif" media="(max-width: 480px)">
+                <source srcset="/media/images/cafeteria-800w.avif" media="(max-width: 800px)">
+                <source srcset="/media/images/cafeteria-1200w.avif" media="(max-width: 1200px)">
+                <source srcset="/media/images/cafeteria-1800w.avif" media="(max-width: 1800px)">
+
+                <source srcset="/media/images/cafeteria-480w.webp" media="(max-width: 480px)">
+                <source srcset="/media/images/cafeteria-800w.webp" media="(max-width: 800px)">
+                <source srcset="/media/images/cafeteria-1200w.webp" media="(max-width: 1200px)">
+                <source srcset="/media/images/cafeteria-1800w.webp" media="(max-width: 1800px)">
+
+                <source srcset="/media/images/cafeteria-480w.jpg" media="(max-width: 480px)">
+                <source srcset="/media/images/cafeteria-800w.jpg" media="(max-width: 800px)">
+                <source srcset="/media/images/cafeteria-1200w.jpg" media="(max-width: 1200px)">
+
+                <img src="/media/images/cafeteria-1800w.jpg" alt="barra de la cafeteria">
+            </picture>
+
+            <picture class="gallery-main">
+                <source srcset="/media/images/barra-lateral-cafeteria-480w.avif" media="(max-width: 480px)">
+                <source srcset="/media/images/barra-lateral-cafeteria-800w.avif" media="(max-width: 800px)">
+                <source srcset="/media/images/barra-lateral-cafeteria-1200w.avif" media="(max-width: 1200px)">
+                <source srcset="/media/images/barra-lateral-cafeteria-1800w.avif" media="(max-width: 1800px)">
+
+                <source srcset="/media/images/barra-lateral-cafeteria-480w.webp" media="(max-width: 480px)">
+                <source srcset="/media/images/barra-lateral-cafeteria-800w.webp" media="(max-width: 800px)">
+                <source srcset="/media/images/barra-lateral-cafeteria-1200w.webp" media="(max-width: 1200px)">
+                <source srcset="/media/images/barra-lateral-cafeteria-1800w.webp" media="(max-width: 1800px)">
+
+                <source srcset="/media/images/barra-lateral-cafeteria-480w.jpg" media="(max-width: 480px)">
+                <source srcset="/media/images/barra-lateral-cafeteria-800w.jpg" media="(max-width: 800px)">
+                <source srcset="/media/images/barra-lateral-cafeteria-1200w.jpg" media="(max-width: 1200px)">
+
+                <img src="/media/images/barra-lateral-cafeteria.jpg" alt="barra lateral de la cafetería">
+            </picture>
+
+            <picture class="gallery-main">
+                <source srcset="/media/images/zona-entrada-480w.webp" media="(max-width: 480px)">
+                <source srcset="/media/images/zona-entrada-800w.webp" media="(max-width: 800px)">
+                <source srcset="/media/images/zona-entrada-1200w.webp" media="(max-width: 1200px)">
+                <source srcset="/media/images/zona-entrada-1800w.webp" media="(max-width: 1800px)">
+
+                <source srcset="/media/images/zona-entrada-480w.jpg" media="(max-width: 480px)">
+                <source srcset="/media/images/zona-entrada-800w.jpg" media="(max-width: 800px)">
+                <source srcset="/media/images/zona-entrada-1200w.jpg" media="(max-width: 1200px)">
+                <source srcset="/media/images/zona-entrada-1800w.jpg" media="(max-width: 1800px)">
+
+                <img src="/media/images/zona-entrada.jpg"
+                    alt="zona de la entrada de la cafetería con sillones verdes y mesas">
+            </picture>
+
+
+            <picture class="gallery-main">
+                <source srcset="/media/images/zona-fondo-480w.webp" media="(max-width: 480px)">
+                <source srcset="/media/images/zona-fondo-800w.webp" media="(max-width: 800px)">
+                <source srcset="/media/images/zona-fondo-1200w.webp" media="(max-width: 1200px)">
+                <source srcset="/media/images/zona-fondo-1800w.webp" media="(max-width: 1800px)">
+
+                <source srcset="/media/images/zona-fondo-480w.jpg" media="(max-width: 480px)">
+                <source srcset="/media/images/zona-fondo-800w.jpg" media="(max-width: 800px)">
+                <source srcset="/media/images/zona-fondo-1200w.jpg" media="(max-width: 1200px)">
+                <source srcset="/media/images/zona-fondo-1800w.jpg" media="(max-width: 1800px)">
+
+                <img src="/media/images/zona-fondo.jpg"
+                    alt="zona del fondo de la cafetería con sillones verdes y televisión arriba">
         </section>
 
         <section class="menu-section-container">
@@ -97,10 +167,9 @@
             </div>
         </section>
 
-        <section class="contact-section-container">
-            <div class="contact-section container">
+        <section class="contact-map-section">
+            <div class="contact-location-section container">
                 <h2>¿Dónde estamos?</h2>
-                <p>C/ García Lorca, 45. Macael, Almería.</p>
                 <div class="button">
                     <button><a href="/pages/contact.html">MAPA</a></button>
                 </div>
@@ -111,7 +180,7 @@
     <!-- FOOTER -->
     <footer>
         <section class="footer-container">
-            <div class="footer container">
+            <div class="footer container" id="location">
                 <div class="information-footer">
                     <div class="hour-footer">
                         <h2>Horario</h2>
@@ -147,6 +216,9 @@
         </section>
     </footer>
 
+    <a href="#top" class="scroll-top" title="Subir al inicio">
+        <img src="/media/icons/arrow-up-solid.svg" alt="Flecha hacia arriba">
+    </a>
 
 </body>
 

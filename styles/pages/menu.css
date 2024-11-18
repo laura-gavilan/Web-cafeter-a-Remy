@@ -71,6 +71,10 @@
         flex-direction: row;
     }
 
+    .menu-section h2 {
+        text-align: start;
+    }
+
     .drinks-menu-container,
     .food-menu-section-container,
     .distillates-menu-section {
@@ -79,6 +83,8 @@
         flex-direction: column;
         gap: 40px;
     }
+
+    
 }
 
 

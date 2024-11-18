@@ -11,13 +11,24 @@
 </head>
 
 <body>
+    <input type="checkbox" name="abrir-menu-desplegable" id="abrir-menu-desplegable" class="input-menu-desplegable">
     <nav class="mobile-tablet-nav">
         <div class="logo-web">
             <p><a href="/index.html"> CAFETERÍA REMY</a></p>
         </div>
+        <div class="menu-desplegable">
+            <ul class="nav-list">
+                <li class="menu-list-1"><a href="/index.html">INICIO</a></li>
+                <li class="menu-list-2"><a href="/pages/menu.html">CARTA</a></li>
+                <li class="menu-list-3"><a href="/pages/events.html">EVENTOS</a></li>
+                <li class="menu-list-4"><a href="/pages/contact.html">CONTACTO</a></li>
+            </ul>
+        </div>
 
         <div class="mobile-nav-menu">
-            <img src="/media/icons/menu-hamburguesa-blanco.png" alt="menú hamburguesa">
+            <label for="abrir-menu-desplegable" class="menu-hamburguesa">
+                <img src="/media/icons/menu-hamburguesa-blanco.png" alt="menú hamburguesa">
+            </label>
         </div>
     </nav>
 
@@ -98,7 +109,8 @@
                     <ul>
                         <li>Pan tostado con mantequilla y mermelada<span>2,50€</span></li>
                         <li>Pan tostado con AOVE y tomate rallado
-                                <span>2,50€</span></li>
+                            <span>2,50€</span>
+                        </li>
                         <li>Croissant con mantequilla y mermelada <span>2,50€</span></li>
                         <li>Bizcocho casero <span>3€</span></li>
                     </ul>

@@ -11,14 +11,24 @@
 </head>
 
 <body>
-
+    <input type="checkbox" name="abrir-menu-desplegable" id="abrir-menu-desplegable" class="input-menu-desplegable">
     <nav class="mobile-tablet-nav">
         <div class="logo-web">
             <p><a href="/index.html"> CAFETERÍA REMY</a></p>
         </div>
+        <div class="menu-desplegable">
+            <ul class="nav-list">
+                <li class="menu-list-1"><a href="/index.html">INICIO</a></li>
+                <li class="menu-list-2"><a href="/pages/menu.html">CARTA</a></li>
+                <li class="menu-list-3"><a href="/pages/events.html">EVENTOS</a></li>
+                <li class="menu-list-4"><a href="/pages/contact.html">CONTACTO</a></li>
+            </ul>
+        </div>
 
         <div class="mobile-nav-menu">
-            <img src="/media/icons/menu-hamburguesa-blanco.png" alt="menú hamburguesa">
+            <label for="abrir-menu-desplegable" class="menu-hamburguesa">
+                <img src="/media/icons/menu-hamburguesa-blanco.png" alt="menú hamburguesa">
+            </label>
         </div>
     </nav>
 
@@ -43,21 +53,31 @@
         <section class="events-section container">
             <h2>EVENTOS</h2>
             <div class="events-cards">
-
                 <div class="corporate-events-card">
                     <h3>Coorporativos</h3>
-                    <div class="img-and-text-corporate-card">
-                        <div class="events-img container">
-                            <img src="/media/images/zona-entrada.jpg" alt="zona de sofás de la cafetería">
-                        </div>
 
-                        <div class="text-card">
-                            <p>Nuestros espacios son ideales para grupos de hasta 60 personas, con varias pantallas
-                                de
-                                TV </p>
-                        </div>
+                    <picture class="img-and-text-corporate-card">
+                        <source srcset="/media/images/zona-entrada-480w.webp" media="(max-width: 480px)">
+                        <source srcset="/media/images/zona-entrada-800w.webp" media="(max-width: 800px)">
+                        <source srcset="/media/images/zona-entrada-1200w.webp" media="(max-width: 1200px)">
+                        <source srcset="/media/images/zona-entrada-1800w.webp" media="(max-width: 1800px)">
+
+                        <source srcset="/media/images/zona-entrada-480w.jpg" media="(max-width: 480px)">
+                        <source srcset="/media/images/zona-entrada-800w.jpg" media="(max-width: 800px)">
+                        <source srcset="/media/images/zona-entrada-1200w.jpg" media="(max-width: 1200px)">
+                        <source srcset="/media/images/zona-entrada-1800w.jpg" media="(max-width: 1800px)">
+
+                        <img src="/media/images/zona-entrada.jpg"
+                            alt="zona de la entrada de la cafetería con sillones verdes y mesas">
+                    </picture>
+
+                    <div class="text-card">
+                        <p>Nuestros espacios son ideales para grupos de hasta 60 personas, con varias pantallas
+                            de
+                            TV </p>
                     </div>
                 </div>
+
 
                 <div class="showroom-events-card">
                     <h3>Showroom</h3>
@@ -83,7 +103,8 @@
                         </div>
 
                         <div class="text-card">
-                            <p>Disfruta con tu familia y amigos en un espacio privado, donde podrás celebrar cumpleaños, despedidas, fiestas privadas,etc. </p>
+                            <p>Disfruta con tu familia y amigos en un espacio privado, donde podrás celebrar cumpleaños,
+                                despedidas, fiestas privadas,etc. </p>
                         </div>
                     </div>
                 </div>

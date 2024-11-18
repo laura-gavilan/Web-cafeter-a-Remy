@@ -5,33 +5,31 @@
 
 .contact-section-container {
 	background-color: var(--bg-section);
-	flex: 1;
-}
-
-
-.contact-section {
 	display: flex;
 	flex-direction: column;
-	gap: 26px;
-	padding: 30px 0;
-}
-
-.contact-information h3 {
-	color: var(--title-color);
-}
-
-.contact-section p {
-	color: var(--title-color);
-}
-
-.contact-section img {
-	width: 12px;
+	flex: 1;
 }
 
 .contact-information {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+	flex: 1;
+}
+
+
+.contact-information h3 {
+	color: var(--title-color);
+	font-size: 22px;
+}
+
+.contact-section p {
+	color: var(--title-color);
+	font-size: 20px;
+}
+
+.contact-information img {
+	width: 12px;
 }
 
 .mapa-contact,
@@ -44,6 +42,13 @@
 
 .text-contact-section p {
 	color: black;
+}
+
+.location-map {
+	display: flex;
+	flex-direction: column;
+    gap: 56px;
+	padding: 54px 0;
 }
 
 .mapa {
@@ -74,6 +79,10 @@
 
 	.contact-information {
 		justify-content: center;
+	}
+
+	.location-map {
+		flex-direction: row;
 	}
 }
 
